@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "${description}",
+  "authors": [
+    "BlockNeko-11"
+  ],
+  "contributors": [
+  ],
+  "contact": {
+    "homepage": "${home_page}",
+    "sources": "${sources_page}"
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+    ],
+    "client": [
+    ]
+  },
+  "mixins": [
+    "example_mod.mixins.json",
+    "example_mod-fabric.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": "${minecraft_dependency}"
+  }
+}

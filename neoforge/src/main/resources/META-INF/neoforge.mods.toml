@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[0,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "${id}"
+version = "${version}"
+displayName = "${name}"
+authors = "BlockNeko-11"
+credits = ""
+displayURL = "${home_page}"
+description = '''
+${description}
+'''
+logoFile = "icon.png"
+
+[[dependencies."${id}"]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neoforge_dependency}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${id}"]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_dependency}"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "example_mod.mixins.json"
+
+[[mixins]]
+config = "example_mod-neoforge.mixins.json"

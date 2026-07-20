@@ -14,7 +14,7 @@
     "sources": "${sources_page}",
     "issues": "${issues_page}"
   },
-  "license": "MIT",
+  "license": "${license}",
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {

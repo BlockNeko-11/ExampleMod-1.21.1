@@ -71,6 +71,7 @@ def props = [
     "version": project.version,
     "name": rootProject.mod_name,
     "description": rootProject.mod_description,
+    "license": rootProject.mod_license,
     "home_page": rootProject.mod_home_page,
     "sources_page": rootProject.mod_sources_page,
     "issues_page": rootProject.mod_issues_page,

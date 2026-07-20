@@ -73,6 +73,7 @@ def props = [
     "description": rootProject.mod_description,
     "home_page": rootProject.mod_home_page,
     "sources_page": rootProject.mod_sources_page,
+    "issues_page": rootProject.mod_issues_page,
     "minecraft_dependency": rootProject.fml_mcver_dependency,
     "neoforge_dependency": rootProject.neoforge_dependency
 ]

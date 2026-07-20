@@ -11,7 +11,8 @@
   ],
   "contact": {
     "homepage": "${home_page}",
-    "sources": "${sources_page}"
+    "sources": "${sources_page}",
+    "issues": "${issues_page}"
   },
   "license": "MIT",
   "icon": "icon.png",

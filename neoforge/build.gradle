@@ -2,7 +2,9 @@ apply plugin: "com.github.johnrengelman.shadow"
 
 architectury {
     platformSetupLoomIde()
-    neoForge()
+    neoForge {
+        platformPackage = "forge"
+    }
 }
 
 def generatedResources = file("src/generated")
@@ -16,18 +18,24 @@ sourceSets {
 loom {
     accessWidenerPath = project(":common").loom.accessWidenerPath
 
-    runConfigs.configureEach {
-        it.ideConfigGenerated false
-    }
-
     // forge {
     //     convertAccessWideners = true
     //     extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
 
-    //     mixinConfig "nekocore.mixins.json"
+    //     mixinConfig "example_mod.mixins.json"
+    //     mixinConfig "example_mod-neoforge.mixins.json"
     // }
 
     neoForge {}
+
+    runs {
+        data {
+            data()
+            programArgs "--all", "--mod", "example_mod"
+            programArgs "--output", generatedResources.absolutePath
+//            property "forge.logging.markers", "SCAN,REGISTRIES,REGISTRYDUMP"
+        }
+    }
 }
 
 configurations {

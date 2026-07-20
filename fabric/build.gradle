@@ -7,10 +7,6 @@ architectury {
 
 loom {
     accessWidenerPath = project(":common").loom.accessWidenerPath
-
-    runConfigs.configureEach {
-        it.ideConfigGenerated false
-    }
 }
 
 configurations {
